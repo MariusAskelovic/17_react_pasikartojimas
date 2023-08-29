@@ -1,0 +1,64 @@
+.div {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 20px;
+
+  text-align: center;
+}
+.listTitle {
+  background-color: #fff;
+  width: fit-content;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.unlisted {
+  list-style: none;
+  padding: 0;
+}
+.list {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  position: relative;
+}
+.movieTitle {
+  color: indianred;
+  font-weight: normal;
+}
+.movieYear {
+  font-weight: bold;
+  font-size: 14px;
+  background-color: black;
+  padding: 2px 4px;
+  color: beige;
+}
+.expensive {
+  color: white;
+  background-color: red;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  border-radius: 30px;
+  position: absolute;
+  font-size: 12px;
+  top: -5px;
+  right: -10px;
+}
+.year {
+  font-size: 12px;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background-color: black;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.button {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}

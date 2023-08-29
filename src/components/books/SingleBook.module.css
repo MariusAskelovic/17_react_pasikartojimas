@@ -1,0 +1,20 @@
+.li {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.bookTitle {
+  color: indianred;
+}
+.bookDate {
+  font-weight: bold;
+}
+.sale {
+  color: white;
+  background-color: red;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
