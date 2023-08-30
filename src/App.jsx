@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import ApiUsers from './components/apiUsers/ApiUsers';
 import BooksList from './components/books/BooksList';
 import Cartoons from './components/cartoons/CartoonsList';
@@ -12,14 +13,22 @@ const counterArr = [
 ];
 
 export default function App() {
+  const [activeComponent, setActiveComponent] = useState(5);
   return (
     <div className='container'>
       <h1>Pasikartojimas</h1>
-      {!true && <CounterList items={counterArr} />}
-      {false && <BooksList />}
-      {false && <MoviesList />}
-      {false && <Cartoons />}
-      {true && <ApiUsers />}
+      <fieldset>
+        <button onClick={() => setActiveComponent(1)}>Counters</button>
+        <button onClick={() => setActiveComponent(2)}>Books</button>
+        <button onClick={() => setActiveComponent(3)}>Movies</button>
+        <button onClick={() => setActiveComponent(4)}>Cartoons</button>
+        <button onClick={() => setActiveComponent(5)}>ApiUsers</button>
+      </fieldset>
+      {activeComponent === 1 && <CounterList items={counterArr} />}
+      {activeComponent === 2 && <BooksList />}
+      {activeComponent === 3 && <MoviesList />}
+      {activeComponent === 4 && <Cartoons />}
+      {activeComponent === 5 && <ApiUsers />}
     </div>
   );
 }
